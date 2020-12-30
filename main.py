@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt #per i plot
 
 # Dati della tabella
 data = np.array([[833. ,  37. ],
