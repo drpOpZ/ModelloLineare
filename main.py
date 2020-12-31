@@ -15,34 +15,34 @@ data = np.array([[833. ,  37. ],
 #------------------------
 # definizione del modello
 #------------------------
-class linear_model:
+class LinearModel:
   def __init__(self):
-	
-	#TODO: inizializzare i campi a None
+    #TODO: inizializzare i campi a None
+    pass
 
   def fit(self,train_data):
-    
-	# controllo che train_data sia della forma giusta
+    # controllo che train_data sia della forma giusta
     try:
       assert(len(train_data.shape)==2)
       assert(train_data.shape[1]==2)
     except:
       raise Exception("Bad train_data shape! {} should be (*,2)".format(train_data.shape))
-	
-	# ricavo le x e le y da train_data
+  
+	  # ricavo le x e le y da train_data
     x = train_data[:,0]
     y = #TODO
     
-	#TODO: calcolare coefficiente angolare e intercetta e salvarli nei campi definiti in __init__
-	#TODO: salvare train_data nel campo definito in __init__
+    #TODO: calcolare coefficiente angolare e intercetta e salvarli nei campi definiti in __init__
+	  #TODO: salvare train_data nel campo definito in __init__
 	
-	#Nota: non ritorna nulla
+    #... no return
 
   def predict(self,xs):
-	
-	#TODO: lancia un eccezione se il coefficiente angolare o l'intercetta non sono none
     
-    #TODO: calcola i valori predetti e restituiscili
+    #TODO: lancia un eccezione se il coefficiente angolare o l'intercetta non sono none
+    
+    #TODO: calcola i valori predetti per le xs e restituiscili
+    pass
 
 #-------------------------
 # applicazione del modello
@@ -51,12 +51,13 @@ class linear_model:
 #TODO: istanziare il modello
 #TODO: effetuare il fit
 
+km_tragitto = #...dati?
 #TODO: predire il numero di litri per il tragitto stimato
-km_tragitto = #...?
 litri_tragitto = #...?
 
+prezzo_benzina = #...dati?
 #TODO: calcolare la spesa di ciascuno
-prezzo_benzina = #...?
 quota_individuale = #...?
 
+# Stampa i risultati a schermo
 print("Litri di benzina totali:{}lt\nQuota individuale:{}€".format(litri_tragitto,quota_individuale))
